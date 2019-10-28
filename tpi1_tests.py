@@ -100,7 +100,8 @@ cidades_portugal = Cidades(
                        'Portalegre': (130,170) }
                      )
 
-init = time.time()
+init_time = time.time()
+
 p1 = SearchProblem(cidades_portugal,'Braga','Agueda')
 t1 = MyTree(p1,'breadth')
 print(t1.search2())
@@ -147,4 +148,4 @@ t7 = MyTree(p67, 'astar', 65)
 print(t7.search2())
 print('total=',t7.total_nodes,', non terminal=',t7.non_terminal_nodes,', terminal=',t7.terminal_nodes)
 
-print(time.time() - init)
+print(f"\n\n\nRun time: {time.time() - init_time} seconds")
